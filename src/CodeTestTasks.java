@@ -7,7 +7,7 @@ public class CodeTestTasks {
         boolean condition = true;
 
         while (condition) {
-            System.out.print("Введите номер алгоритма проверяемого алгоритма от 1 до 3 или 0 для выхода: ");
+            System.out.print("Enter the number of the algorithm from 1 to 3 or 0 to exit: ");
             int selectedAlgorithm = scanner.nextInt();
             switch (selectedAlgorithm) {
                 case 0:
@@ -20,12 +20,12 @@ public class CodeTestTasks {
                     compareEnteredName();
                     break;
                 case 3:
-                    System.out.print("Введите требуемую длину массива: ");
+                    System.out.print("Enter the required array length: ");
                     int arrayLength = scanner.nextInt();
                     checkForMultiplicity(arrayLength);
                     break;
                 default:
-                    System.out.println("Неправильный выбор!!!");
+                    System.out.println("Wrong choice!!!");
                     break;
             }
         }
@@ -34,7 +34,7 @@ public class CodeTestTasks {
 
     public static void compareEnteredNumber() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число: ");
+        System.out.print("Enter the number: ");
         int enteredNumber = scanner.nextInt();
         if (enteredNumber > 7) {
             System.out.println("Hello!!!");
@@ -43,12 +43,12 @@ public class CodeTestTasks {
 
     public static void compareEnteredName() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите имя: ");
+        System.out.print("Enter the name: ");
         String enteredName = scanner.nextLine();
-        if (enteredName.equals("Вячеслав")) {
-            System.out.println("Привет, " + enteredName + "!");
+        if (enteredName.equals("Vyacheslav")) {
+            System.out.println("Hello  " + enteredName + "!");
         } else {
-            System.out.println("Нет такого имени.");
+            System.out.println("There is no such name.");
         }
     }
 
@@ -65,6 +65,6 @@ public class CodeTestTasks {
             }
         }
 
-        System.out.println("\nКолличество чисел, кратное трём: " + counter + ".");
+        System.out.println("\nThe quantity of numbers that are multiples of 3: " + counter + ".");
     }
 }
